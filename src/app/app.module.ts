@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { AlertModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
+import { TheProfileComponent } from './the-profile/the-profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TheProfileComponent
   ],
   imports: [
     BrowserModule,
