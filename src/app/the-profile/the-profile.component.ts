@@ -8,7 +8,10 @@ import {GithubService} from '../services/github.service';
 })
 export class TheProfileComponent implements OnInit {
 
-  constructor(private _githubService: GithubService) { 
+  constructor(private _githubService: GithubService) {
+    this._githubService.getUser().subscribe(user => {
+        console.log(user);
+    });
 
   }
 
